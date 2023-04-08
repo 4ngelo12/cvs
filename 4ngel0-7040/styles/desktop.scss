@@ -1,58 +1,40 @@
 //Header
 
-@media (min-width: 992px) {
-    .header-contenedor {
+@media (min-width: 768px) {
+    .header-nav {
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .header-barra {
-        display: none;
+    .header-nav-opciones {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
     }
 
-    .header-navegacion {
-        flex-direction: row;
-        margin-bottom: 0;
-        visibility: visible;
-        opacity: 1;
-        height: auto;
+    .header-nav-redes {
+        gap: 2rem;
+        margin-top: 0;
     }
 }
 
-//Presentación
+//Aritculos
 
 @media (min-width: 768px) {
-    .presentacion {
-        padding: 10rem 15rem;
-
-        .presentacion-header {
-            font-size: 2rem;
-        }
-
-        .presentacion-span {
-            font-size: 6rem;
-        }
+    .article-main {
+        background-position: center center;
+        width: 100%;
     }
-}
 
-//Proyectos
-
-@media (min-width: 992px) {
-    .proyect-article:last-child {
-        grid-area: 3 / 1 / 4 / 5;
+    .article-main-content {
+        padding: 38rem 5rem 0;
     }
-}
 
-//Sobre mi
-
-@media (min-width: 992px) {
-    .about-content {
+    .article-featured-daily {
         flex-direction: row;
-        padding: 0 7rem;
-        justify-content: space-evenly;
-    }
-
-    .about-content-img {
-        width: 70%;
+        justify-content: space-between;
+        gap: 2rem;
+        padding: 2rem;
     }
 }
+

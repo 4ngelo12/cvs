@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Perfil</title>
+    <title>Blog</title>
 
     <!--Font Awesome-->
-    <script src="https://kit.fontawesome.com/f598ed98d6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--Hojas de Estilo-->
     <link rel="stylesheet" href="assets/css/main.css">
@@ -16,252 +18,141 @@
 
 <body>
     <header class="header">
-        <div class="header-contenedor contenedor">
-            <a href="index.html">
-                <h1 class="header-logo">Bienvenido/a</h1>
-            </a>
+        <h1>Open World</h1>
 
-            <div class="header-barra">
-                <img src="assets/img/barras.svg" alt="barras" class="header-barra-img">
-            </div>
-
-            <nav class="header-navegacion ocultar">
-                <a href="about.html" class="bold">Acerca de mí</a>
-                <a href="index.html#skills" class="bold">Mis habilidades</a>
-                <a href="index.html#proyects" class="bold">Proyectos</a>
-                <a href="contact.html" class="bold">Contacto</a>
+        <div class="header-nav">
+            <nav class="header-nav-opciones">
+                <a href="#">Lo Último</a>
+                <a href="#">Recomendaciones</a>
+                <a href="#">Videos</a>
+                <a href="#">Suscribirse</a>
             </nav>
+
+            <div class="header-nav-redes">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
         </div>
     </header>
 
-    <hr class="separador">
+    <div class="contenedor ">
+        <article class="article-main">
+            <div class="article-main-content">
+                <header class="article-main-header">
+                    <h2>
+                        <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, laborum?</a>
+                    </h2>
+                </header>
 
-    <article class="presentacion">
-
-        <h2 class="presentacion-header">Hola 👋, mi nombre es <span class="presentacion-span">Angelo
-                Casapaico</span></h2>
-
-        <p class="presentacion-texto">Soy desarrollador web FullStack en formación con conocimientos en muchas
-            tecnologías</p>
-    </article>
-
-    <hr class="separador">
+                <div class="article-main-text">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam dolorum natus debitis culpa at
+                        voluptatibus reprehenderit sapiente quae libero suscipit!</p>
+                </div>
+            </div>
+        </article>
+    </div>
 
     <main class="contenedor">
-        <section id="skills" class="skill">
-            <h2>Mis Habilidades 🛠</h2>
 
-            <div class="skill-lista">
-
-                <div class="skill-language">
-                    <i class="fa-brands fa-html5 skill-size" style="color: orange;"></i>
-                    <p>HTML5</p>
-                </div>
-
-                <div class="skill-language">
-                    <i class="fa-brands fa-css3-alt skill-size" style="color: #3881ff;"></i>
-                    <p>CSS3</p>
-                </div>
-
-                <div class="skill-language">
-                    <i class="fa-brands fa-js skill-size" style="color: #e0e02d;"></i>
-                    <p>JavaScript</p>
-                </div>
-
-                <div class="skill-language">
-                    <i class="fa-brands fa-php skill-size" style="color: #2153ab;"></i>
-                    <p>PHP</p>
-                </div>
-
-                <div class="skill-language">
-                    <i class="fa-brands fa-java skill-size" style="color: #e87911;"></i>
-                    <p>Java</p>
-                </div>
-
-                <div class="skill-language">
-                    <i class="fa-brands fa-git-alt skill-size" style="color: #f1ab32;"></i>
-                    <p>Git</p>
-                </div>
-
-                <div class="skill-language">
-                    <i class="fa-brands fa-github skill-size" style="color: #01132f;"></i>
-                    <p>GitHub</p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2 id="proyects">Mis Proyectos 📚</h2>
-
-            <div class="proyect">
-                <article class="proyect-article">
-                    <h3>Página de pasteleria</h3>
-                    <p class="proyect-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse, eius
-                        harum eveniet
-                        doloribus quo minus odit! Porro qui eveniet, repudiandae asperiores sit ab quibusdam!</p>
-
-                    <div class="proyect-img">
-                        <picture>
-                            <source srcset="assets/img/pasteleria.avif" type="image/avif">
-                            <source srcset="assets/img/pasteleria.webp" type="image/webp">
-                            <img loading="lazy" src="assets/img/pasteleria.png" alt="imagen-proyecto">
-                        </picture>
-                    </div>
-
-                    <a href="https://pasteleria-dulce-hogar.netlify.app/" class="boton-proyecto" target="_blank">Ver
-                        Proyecto</a>
-                </article>
-
-                <article class="proyect-article">
-                    <h3>Página de vacunacion</h3>
-                    <p class="proyect-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse, eius
-                        harum eveniet
-                        doloribus quo minus odit! Porro qui eveniet, repudiandae asperiores sit ab quibusdam!</p>
-
-                    <div class="proyect-img">
-                        <picture>
-                            <source srcset="assets/img/vacunacion.avif" type="image/avif">
-                            <source srcset="assets/img/vacunacion.webp" type="image/webp">
-                            <img loading="lazy" src="assets/img/vacunacion.png" alt="imagen-proyecto">
-                        </picture>
-                    </div>
-
-                    <a href="https://informe-de-vacunacion.netlify.app/" class="boton-proyecto" target="_blank">Ver
-                        Proyecto</a>
-                </article>
-
-                <article class="proyect-article">
-                    <h3>Blog de Café</h3>
-                    <p class="proyect-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse, eius
-                        harum eveniet
-                        doloribus quo minus odit! Porro qui eveniet, repudiandae asperiores sit ab quibusdam! </p>
-
-                    <div class="proyect-img">
-                        <picture>
-                            <source srcset="assets/img/blog-cafe.avif" type="image/avif">
-                            <source srcset="assets/img/blog-cafe.webp" type="image/webp">
-                            <img loading="lazy" src="assets/img/blog-cafe.png" alt="imagen-proyecto">
-                        </picture>
-                    </div>
-
-                    <a href="https://clasescafe.netlify.app/" class="boton-proyecto" target="_blank">Ver
-                        Proyecto</a>
-                </article>
-
-                <article class="proyect-article">
-                    <h3>Festival de Música</h3>
-                    <p class="proyect-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia esse, eius
-                        harum eveniet
-                        doloribus quo minus odit! Porro qui eveniet, repudiandae asperiores sit ab quibusdam!</p>
-
-                    <div class="proyect-img">
-                        <picture>
-                            <source srcset="assets/img/festival-musica.avif" type="image/avif">
-                            <source srcset="assets/img/festival-musica.webp" type="image/webp">
-                            <img loading="lazy" src="assets/img/festival-musica.png" alt="imagen-proyecto">
-                        </picture>
-                    </div>
-
-                    <a href="https://musica-festival-rock-edm.netlify.app/" class="boton-proyecto" target="_blank">Ver
-                        Proyecto</a>
-                </article>
-
-            </div>
-        </section>
-    </main>
-
-    <section class="contenedor">
-
-        <h2>Comandos y Alías que uso en Linux 🐚</h2>
-
-        <table class="tabla t-1">
-            <tr>
-                <th><span class="bold">Comandos</span></th>
-                <th><span class="bold">Descripción</span></th>
-            </tr>
-
-            <tr>
-                <td>cd</td>
-                <td>Permite cambiar de directorio</td>
-            </tr>
-
-            <tr>
-                <td>mkdir</td>
-                <td>Sirve para crear una nueva carpeta o directorio</td>
-            </tr>
-
-            <tr>
-                <td>pwd</td>
-                <td>Imprime la dirección del directorio actual</td>
-            </tr>
-
-            <tr>
-                <td>rm</td>
-                <td>Permite eliminar archivos brindando una ruta</td>
-            </tr>
-
-            <tr>
-                <td>Ctrl + u</td>
-                <td>Elimina una linea entera</td>
-            </tr>
-        </table>
-
-        <table class="tabla">
-            <tr>
-                <th><span class="bold">Comandos</span></th>
-                <th><span class="bold">Descripción</span></th>
-            </tr>
-
-            <tr>
-                <td>alias npms='npm start'</td>
-                <td>Llama un npm para ejecutar comandos de node</td>
-            </tr>
-
-            <tr>
-                <td>alias cl='clear'</td>
-                <td>Sirve para limpiar la terminal</td>
-            </tr>
-
-            <tr>
-                <td>alias ..='cd ..'</td>
-                <td>Sirve para retroceder dentro de un directorio</td>
-            </tr>
-
-            <tr>
-                <td>alias gaa='git add .'</td>
-                <td>Sirve agregar todos los archivos al staging area</td>
-            </tr>
-
-            <tr>
-                <td>alias gc='git commit -m'</td>
-                <td>Permite crear un nuevo commit</td>
-            </tr>
-        </table>
-    </section>
-
-    <hr class="separador">
-
-    <footer class="footer centrar">
-        <div class="footer-div">
-            <nav class="footer-nav">
-                <a href="https://www.linkedin.com/in/casapaico-angelo/" target="_blank">
-                    <i class="fa-brands fa-linkedin fa-2xl"></i>
-                </a>
-
-                <a href="https://github.com/4ngelo12" target="_blank">
-                    <i class="fa-brands fa-github fa-2xl"></i>
-                </a>
-
-                <a href="mailto:angelop.casapaico@gmail.com">
-                    <i class="fa-solid fa-envelope fa-2xl"></i>
-                </a>
-            </nav>
+        <div>
+            <h2>Lo Último</h2>
         </div>
 
-        <p class="footer-text">Angelo Casapaico &copy; <span>2023</span></p>
+        <hr class="separador">
+
+        <div class="article-featured">
+            <article class="article-featured-daily">
+                <div>
+                    <picture>
+                        <source srcset="assets/img/realidad-virtual-blog.webp" type="image/webp">
+                        <img loading="lazy" src="assets/img/realidad-virtual-blog.webp" alt="Imagen Articulo">
+                    </picture>
+                </div>
+
+                <div>
+                    <header class="article-featured-header">
+                        <h2>
+                            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium
+                                obcaecati, nam officia quas quaerat dolor voluptatem fugit explicabo ratione!</a>
+                        </h2>
+                    </header>
+
+                    <div class="article-featured-text">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, quam aut nihil quas inventore
+                            eum unde nam, totam, eligendi assumenda velit quaerat! Aspernatur consequatur quos laborum,
+                            qui repudiandae neque modi mollitia saepe perferendis quas. Corrupti odit iusto expedita
+                            ipsa quod.</p>
+                    </div>
+
+                    <footer class="article-featured-footer">
+                        <p>Hace 1 horas</p>
+                    </footer>
+                </div>
+            </article>
+
+            <article class="article-featured-daily">
+                <div>
+                    <picture>
+                        <source srcset="assets/img/imagen_5.webp" type="image/webp">
+                        <img loading="lazy" src="assets/img/imagen_5.jpg" alt="Imagen Articulo">
+                    </picture>
+                </div>
+
+                <div>
+                    <header class="article-featured-header">
+                        <h2>
+                            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, non.r</a>
+                        </h2>
+                    </header>
+
+                    <div class="article-featured-text">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, quam aut nihil quas inventore
+                            eum unde nam, totam, eligendi assumenda velit quaerat! Aspernatur consequatur quos laborum,
+                            qui repudiandae neque modi mollitia saepe perferendis quas. Corrupti odit iusto expedita
+                            ipsa quod.</p>
+                    </div>
+
+                    <footer class="article-featured-footer">
+                        <p>Hace 15 horas</p>
+                    </footer>
+                </div>
+            </article>
+
+            <article class="article-featured-daily">
+                <div>
+                    <picture>
+                        <source srcset="assets/img/imagen_6.webp" type="image/webp">
+                        <img loading="lazy" src="assets/img/imagen_6.jpg" alt="Imagen Articulo">
+                    </picture>
+                </div>
+
+                <div>
+                    <header class="article-featured-header">
+                        <h2>
+                            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, voluptate?</a>
+                        </h2>
+                    </header>
+
+                    <div class="article-featured-text">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, quam aut nihil quas inventore
+                            eum unde nam, totam, eligendi assumenda velit quaerat! Aspernatur consequatur quos laborum,
+                            qui repudiandae neque modi mollitia saepe perferendis quas. Corrupti odit iusto expedita
+                            ipsa quod.</p>
+                    </div>
+
+                    <footer class="article-featured-footer">
+                        <p>Hace 20 horas</p>
+                    </footer>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2023 Open World. All Rights Reserved.</p>
     </footer>
 
-    <script src="assets/js/app.js"></script>
 </body>
 
 </html>
