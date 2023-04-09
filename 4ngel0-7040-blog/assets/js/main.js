@@ -1,10 +1,3 @@
-import dayjs from 'dayjs';
-import relativeTime from 'dayjs/plugin/relativeTime.js';
-
-await import('dayjs/locale/es.js');
-dayjs.extend(relativeTime);
-dayjs.locale('es');
-
 const postTime1 = document.querySelector("#postTime-1");
 const postTime2 = document.querySelector("#postTime-2");
 const postTime3 = document.querySelector("#postTime-3");
